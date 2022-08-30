@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-shadow: 0 0 5px black, 0 0 8px blue;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+.time {
+    background: rgba(0, 0, 233, 0.8);
+    width: calc(100% / 4);
+    margin: 10px;
+    height: 5rem;
+    text-align: center;
+    padding: 25px 5px 0 0;
+    border-radius: 10px;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #00f;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0021f953;
+  }
+
+  .container::after {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(130deg, #0011e3, rgba(0, 0, 233, 0.3));
+    top: 0;
+    left: 25px;
+    animation:  animate 2s infinite;
+  }
+
+  .container::before {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(130deg, #0011e3, rgba(0, 0, 233, 0.3));
+    bottom: 30px;
+    right: 25px;
+  }
+
+  @keyframes animate {
+    50% {
+        top: 10px;
+        left: 10px;
+    }
+ 
+  }
+
+  .m {
+    background: rgba(0, 0, 0, 0.8);
+    width: 14.5rem;
+    border-radius: 10px;
+    position: absolute;
+    padding: 10px;
+    bottom: 30%;
+  }
